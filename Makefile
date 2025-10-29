@@ -1,4 +1,4 @@
-COMPOSE_FILE = srcs/docker-compose.yaml
+COMPOSE_FILE = srcs/docker-compose.yml
 DB_VOL = /home/yiken/data/db
 WWW_VOL = /home/yiken/data/www
 VOLUMES = $(shell docker volume ls -q)
