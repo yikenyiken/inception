@@ -1,4 +1,4 @@
-FROM		alpine
+FROM		alpine:3.22.1
 RUN		apk add --no-cache mariadb mariadb-client
 RUN		mkdir -p /var/lib/mysql && chown -R mysql: /var/lib/mysql
 RUN		mkdir -p /run/mysqld && chown -R mysql: /run/mysqld

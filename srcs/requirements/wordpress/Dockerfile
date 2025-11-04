@@ -1,4 +1,4 @@
-FROM		alpine
+FROM		alpine:3.22.1
 RUN		apk add --no-cache php83-cli php83-phar php83-curl php83-mysqli php83-iconv	\
 		php83-fpm
 RUN		echo "listen = 0.0.0.0:9000" >> /etc/php83/php-fpm.d/www.conf
