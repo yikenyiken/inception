@@ -29,6 +29,7 @@ services:
         image:    nginx:1.0
         volumes:
           - www_vol:/var/www/html
+        env_file: .env
         networks:
           - docker-network
         ports:
