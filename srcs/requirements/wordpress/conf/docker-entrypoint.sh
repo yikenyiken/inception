@@ -41,7 +41,7 @@ if [ ! -f $CONF_FILE ]; then
 	wp config create --path=$ROOTDIR --dbname=$MDB_DATABASE --dbuser=$MDB_USER						\
 	--dbpass=$MDB_PASSWORD --dbhost=$DB_HOST
 
-	wp core install --path=$ROOTDIR --url=$URL --title="$TITLE"								\
+	wp core install --path=$ROOTDIR --url=$DOMAIN_NAME --title="$TITLE"								\
 	--admin_user=$ADMIN_USER --admin_password=$ADMIN_PASSWORD --admin_email=$ADMIN_EMAIL
 
 	wp user create --path=$ROOTDIR $USER $USER_EMAIL --role=$USER_ROLE --user_pass=$USER_PASSWORD
